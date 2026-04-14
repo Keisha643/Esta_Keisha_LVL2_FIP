@@ -1,0 +1,144 @@
+# Project Overview
+This project is a three‑page responsive website built for my Level 2 Final Integrated Project (FIP). The goal is to create a modern rebrand of Swerve, a fictional beverage company, using clean, semantic HTML, organized CSS, and interactive JavaScript components.
+
+The website includes:
+
+- A Home Page (index.html)
+
+- A Products Page (products.html)
+
+- A Contact Page (contact.html) with a fully functional form
+
+All pages follow a consistent grid system, typography scale, and brand styling inspired by the Swerve rebrand concept.
+
+
+## Project Requirements (as assigned)
+Build three fully functional web pages
+
+One page must be index.html
+
+One page must include a contact form
+
+Must use HTML, CSS, and JavaScript
+
+Must demonstrate:
+
+Responsive layout
+
+Interactive elements
+
+Clean code structure
+
+Visual consistency across pages
+
+
+## Technical Implementation
+### HTML
+Semantic structure for accessibility and clarity
+
+Reusable components (navigation, footer, cards, sections)
+
+Grid-based layout using a custom grid.css system
+
+Contact form with labeled inputs and textarea
+
+### CSS
+Custom grid system for desktop, tablet, and mobile
+
+Card components with borders, shadows, and spacing
+
+Responsive product grid
+
+Hero sections with image/text alignment
+
+Circular staff cards
+
+Overlay button (“How It Started”) using absolute positioning
+
+Mobile-first breakpoints for all major sections
+
+### JavaScript
+FAQ accordion with:
+
+Smooth open/close animation
+
+Fade‑in content
+
+Rotating + icon
+
+One‑open‑at‑a‑time behavior
+
+Optional enhancements:
+
+Scroll animations
+
+Hover interactions
+
+Form validation
+
+
+## Pages Summary
+### 1. Home Page (index.html)
+Hero section
+
+Brand introduction
+
+Featured products
+
+Navigation + footer
+
+
+### 2. Products Page (products.html)
+New product hero
+
+Fall cocktail line feature
+
+“How It Started” section with overlay button
+
+Product grid (4 items)
+
+Recruitment CTA
+
+Contact form
+
+
+### 3. Contact Page (contact.html)
+Intro hero
+
+Two‑column layout:
+
+Contact form
+
+FAQ accordion
+
+Staff section with circular profile cards
+
+
+## Tools & Workflow
+VS Code for development
+
+Live Server for local testing
+
+GitHub for version control
+
+Figma for pixel‑accurate layout recreation
+
+Photoshop for optimizing images
+
+Cinema 4D for creating can and bottle models
+
+Illustrator for creating designs and labels
+
+
+## Purpose
+This project demonstrates my ability to:
+
+Translate high‑fidelity design PDFs into working code
+
+Build responsive layouts from scratch
+
+Implement interactive UI components
+
+Maintain consistent branding across multiple pages
+
+Organize and document a multi‑page website project
