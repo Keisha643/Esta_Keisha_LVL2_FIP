@@ -1,0 +1,426 @@
+/* General Styles */
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   color: #000000;
+   font-family: 'Fraunces';
+   src: url(../fonts/Fraunces-Regular.ttf) format('ttf');
+}
+
+a {
+   text-decoration: none;
+   transition: all .5s ease-in-out;
+}
+
+input:focus {
+   border: green;
+}
+
+
+/* Home Nav */
+#nav-container {
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   background-color: #ff8250;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+   width: 130px;
+   height: auto;
+   margin-top: 10px;
+   padding: 20px 0px 20px 0px;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#main-nav ul,
+#nav-two ul {
+  list-style: none;
+  display: flex;
+  gap: 85px; 
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  margin: 3px;
+}
+
+#main-nav a {
+    color: #161616;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#main-nav a:hover {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#nav-two {
+   background-color: #8c41b4;
+   padding: 10px 20px;
+   text-align: center;
+  margin-top: 10px;
+  display: flexbox;
+}
+
+#nav-two a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: 0.2s ease;
+}
+
+#nav-two a:hover {
+  color: #ffcc00;
+  font-size: 20px;
+}
+
+#header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+#header-actions a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+#header-actions a:hover {
+  color: #ffcc00; 
+}
+
+#header-actions .search-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.login {
+  display: inline-block;
+  background-color: #44c2fd;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.register {
+  display: inline-block;
+  background-color: #44c2fd;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.login:hover, .register:hover {
+  background-color: #ffcc00;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+/* Hero  Video Section */
+#hero-video {
+  margin-bottom: 150px;
+}
+
+.hero-media {
+  width: 100%;
+  height: auto;
+  display: block; 
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+}
+
+
+/* Main Hero Section */
+#our-story h2 {
+    font-size: 32px;
+    font-weight: 800;
+    border: 2px solid #b7b7b7;
+    border-radius: 13px;
+    padding: 20px;
+    text-align: center;
+}
+
+#our-story p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #353535;
+}
+
+#story-image img {
+   width: 600px;
+   height: auto;
+   border-radius:  20px 0 20px 0;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}   
+
+.action-buttons button {
+   background-color: #fffdac;
+   border: solid 2px #777777;
+   color: #404040;
+   font-size: 20px;
+   margin-top: 70px;
+   margin-bottom: 100px;
+   border-radius: 10px;
+   padding: 25px 30px;
+   cursor: pointer;
+   transition: 0.4s ease-in-out, color 0.4s ease-in-out, font-size 0.4s ease-in-out;
+}
+
+.action-buttons button:hover {
+   background-color: #ffcc00;
+   color: #ffffff;
+   font-size: 20px;
+   border-radius: 50px;
+}
+
+
+/* Product Section */
+.product-grid {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+
+/* Mobile Slideshow */
+.product-slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 40px auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.97);
+  transition: opacity 0.6s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slide img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+  box-shadow: #777777 0px 20px 20px;
+}
+
+
+/* Desktop Layout */
+.product-grid {
+  display: none;
+  border-bottom: 3px solid #333;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-slideshow {
+    display: none; 
+  }
+
+  .product-grid {
+    display: grid; 
+  }
+
+  .product-card {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .product-card img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease-in-out;
+    box-shadow: #777777 0px 5px 5px;
+  }
+
+  .product-card img:hover {
+    transform: translateY(-10px) scale(1.05);
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));
+    box-shadow: #777777 0px 20px 20px;
+  }
+}
+
+
+/* Flavoured Can Section */
+.flavour-card {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.flavour-card img {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.flavour-card:hover img {
+  transform: translateY(-10px) scale(1.05);
+   filter: drop-shadow(0 0 20px rgba(255, 229, 112, 0.5));
+}
+
+/* Lightbox Info */
+.flavour-info {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 85%;
+  background: rgba(255, 255, 255, 0.478);
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px #353535;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.flavour-card:hover .flavour-info {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Base hover lift */
+.flavour-card:hover img {
+  transform: translateY(-10px) scale(1.05);
+}
+
+/* BERRY BREEZE — pink/purple glow */
+.flavour-card.berry:hover img {
+  filter: drop-shadow(0 0 25px rgba(88, 131, 251, 0.792));
+}
+
+/* GOLDEN ZEST — citrus yellow glow */
+.flavour-card.golden:hover img {
+  filter: drop-shadow(0 0 25px rgba(255, 215, 80, 0.55));
+}
+
+/* VALENTINE REPRISE — red/pink glow */
+.flavour-card.valentine:hover img {
+  filter: drop-shadow(0 0 25px rgba(255, 90, 120, 0.55));
+}
+
+/* MELON RUSH — green glow */
+.flavour-card.melon:hover img {
+  filter: drop-shadow(0 0 25px rgba(120, 255, 149, 0.994));
+}
+
+.flavour-card.berry {
+  background: linear-gradient(180deg, #72ceef, #ffffff);
+}
+
+.flavour-card.golden {
+  background: linear-gradient(180deg, #ffe373, #ffffff);
+}
+
+.flavour-card.valentine {
+  background: linear-gradient(180deg, #c95873, #ffffff);
+}
+
+.flavour-card.melon {
+  background: linear-gradient(180deg, #53ce76, #ffffff);
+}
+
+
+/* Footer */
+#site-footer {
+  background: #ff8250;
+  color: #fff;
+  padding: 60px 0;
+  margin-top: 80px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  background: linear-gradient(180deg, #ff8250, #ea8a65);
+}
+
+.footer-grid {
+  row-gap: 40px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-col a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-col a:hover {
+  color: #ffcc00;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-align: right;
+}
+
+.footer-logo img {
+  width: 150px;
+  height: auto;
+  margin-left: 70px;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.copyright-col p {
+    margin-top: 90px;
+    margin-bottom: 10px;
+    color: #353535;
+}
+
+.footer-grid {
+  column-gap: 70px; 
+}

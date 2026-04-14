@@ -3,9 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Swerve Home Page</title>
 </head>
+
+
 <body>
-    
+     <h1 class="visually-hidden">Welcome to Swerve - Homepage</h1>
+
+        <!-- Navigation -->
+        <div id="nav-container">
+            <header class="grid-con center-grid-con">
+                <div class="header-container col-span-full m-col-start-1 m-col-end-4">
+                    <img src="images/swervelogo-(lemon).png" alt="Swerve Logo" class="logo">
+                </div>
+                <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-11">
+                    <h2 class="visually-hidden">Main Navigation</h2>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#" class="login">Login</a></li>
+                        <li><a href="#" class="register">Register</a></li>
+                    </ul>
+                </nav>
+               
+                <nav id="nav-two" class="col-span-full ">
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Products</a></li>
+                        <li><a href="#">Alcohol & Wine</a></li>
+                        <li><a href="#">Cocktails</a></li>
+                        <li><a href="#">Seasonal Offers & Deals</a></li>
+                    </ul>
+                </nav> 
+            </header> 
+        </div>
+
+
+            <!-- Main Hero Section -->
+
+             <!-- Hero Video Section -->
+<section id="hero-video" class="grid-con center-grid-con">
+    <div class="col-span-full">
+      <video autoplay muted loop playsinline class="hero-media">
+        <source src="video/MD_FIP.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+</section>
+
+
+
+            <!-- Our Story Section -->
+            <div class="grid-con center-grid-con">
+                <section class="col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7" id="our-story">
+        <h2>Our Story</h2>
+
+        <p class="story-text">
+            Swerve is a Canadian beverage company established in 1960, originally known for its bold alcoholic beverages and cocktail mixes. In 2016, Swerve expanded into the athletic market with a line of performance‑focused sports drinks. Today, Swerve stands at the intersection of energy, flavour, and lifestyle, offering products for both celebration and performance.
+        </p>
+    </section>
+
+                <div class="col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-13" id="story-image">
+                     <img sizes="(768px) 50vw, (1200px) 33vw"
+                    srcset="images/Hero-Video_c7piqx_c_scale,w_768.jpg 768w,images/Hero-Video_c7piqx_c_scale,w_1029.jpg 1029w, images/Hero-Video_c7piqx_c_scale,w_1200.jpg 1200w"
+                    src="images/Hero-Video_c7piqx_c_scale,w_1200.jpg">
+                </div>
+            </div>
+
+
+            <!-- Action Buttons -->
+            <div class="action-buttons grid-con center-grid-con">
+                <button class="col-span-2 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6">Join The Community</button>
+                <button class="col-span-2 m-col-start-8 m-col-end-11 l-col-start-8 l-col-end-11">Blog</button>
+            </div>
+
+            
+<div class="product-section">
+
+    <h2 class="visually-hidden">Our Products</h2>
+
+    <div class="product-slideshow">
+
+        <div class="slide active">
+            <img src="images/berry-breeze-can.jpg" alt="Berry Breeze Can">
+        </div>
+
+        <div class="slide">
+            <img src="images/golden-zest-can.jpg" alt="Golden Zest Can">
+        </div>
+
+        <div class="slide">
+            <img src="images/valentine-reprise-can.jpg" alt="Valentine Reprise Can">
+        </div>
+
+        <div class="slide">
+            <img src="images/melon-rush-can.jpg" alt="Melon Rush Can">
+        </div>
+    </div>
+
+
+    <!-- DESKTOP/TABLET GRID -->
+    <div class="grid-con center-grid-con product-grid">
+        <div class="product-card col-span-2 m-col-span-6 l-col-span-3">
+            <img src="images/berry-breeze-can.jpg" alt="Berry Breeze Can">
+        </div>
+        <div class="product-card col-span-2 m-col-span-6 l-col-span-3">
+            <img src="images/golden-zest-can.jpg" alt="Golden Zest Can">
+        </div>
+        <div class="product-card col-span-2 m-col-span-6 l-col-span-3">
+            <img src="images/valentine-reprise-can.jpg" alt="Valentine Reprise Can">
+        </div>
+        <div class="product-card col-span-2 m-col-span-6 l-col-span-3">
+            <img src="images/melon-rush-can.jpg" alt="Melon Rush Can">
+        </div>
+    </div>
+</div>
+
+
+    <!-- Flavoured Can Section -->
+     <div class="grid-con center-grid-con flavoured-cans">
+
+    <div class="flavour-card berry col-span-2 m-col-span-6 l-col-span-3">
+        <img src="images/berry-breeze-can.jpg" alt="Berry Breeze Can">
+        <div class="flavour-info">
+            <h3>Berry Breeze</h3>
+            <p>Sweet, bold, and refreshing — your go‑to summer flavour.</p>
+        </div>
+    </div>
+
+    <div class="flavour-card golden col-span-2 m-col-span-6 l-col-span-3">
+        <img src="images/golden-zest-can.jpg" alt="Golden Zest Can">
+        <div class="flavour-info">
+            <h3>Golden Zest</h3>
+            <p>A bright citrus kick with a smooth finish.</p>
+        </div>
+    </div>
+
+    <div class="flavour-card valentine col-span-2 m-col-span-6 l-col-span-3">
+        <img src="images/valentine-reprise-can.jpg" alt="Valentine Reprise Can">
+        <div class="flavour-info">
+            <h3>Valentine Reprise</h3>
+            <p>Floral, fruity, and made for celebrations.</p>
+        </div>
+    </div>
+
+    <div class="flavour-card melon col-span-2 m-col-span-6 l-col-span-3">
+        <img src="images/melon-rush-can.jpg" alt="Melon Rush Can">
+        <div class="flavour-info">
+            <h3>Melon Rush</h3>
+            <p>Pure summer in every sip — crisp and juicy.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Copyright -->
+<div class="copyright-col col-span-full m-col-span-12 l-col-span-3 footer-copy">
+      <p>© Swerve & Co.</p>
+    </div>
+
+
+<!-- Footer -->
+<footer id="site-footer" class="full-width-grid-con">
+  <div class="grid-con center-grid-con footer-grid">
+
+    <div class="footer-col col-span-full m-col-span-4 l-col-span-3">
+      <h3 class="footer-logo">
+        <img src="images/swervelogo-(lemon).png" alt="Swerve Logo">
+      </h3>
+    </div>
+
+    <div class="footer-col m-col-start-7 m-col-end-10 l-col-start-8 l-col-end-11">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col m-col-start-10 m-col-end-13 l-col-start-11 l-col-end-13">
+      <ul>
+        <li><a href="#">Our Products</a></li>
+        <li><a href="#">Alcohol & Wine</a></li>
+        <li><a href="#">Cocktails</a></li>
+        <li><a href="#">Seasonal Offers & Deals</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+ 
+
+    <script src="js/main.js"></script>
 </body>
 </html>
